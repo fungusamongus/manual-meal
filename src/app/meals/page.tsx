@@ -10,7 +10,7 @@ import LoadingAnimation from "@/components/meals/loading-animation";
 export default function Meals() {
     const [searchQuery, setSearchQuery] = useState("");
     const [searchResults, setSearchResults] = useState<MealResult[]>([]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSearch = async () => {
         if (searchQuery) {
