@@ -54,7 +54,7 @@ export default function Meals() {
                             <div className="py-4 px-8 space-y-3">
                                 {searchResults.map((meal, index) => (
                                     <MealCard
-                                        key={`meal-${index}`}
+                                        key={`${index}-${meal.name}`}
                                         name={meal.name}
                                         url={meal.url}
                                         image={meal.image}
